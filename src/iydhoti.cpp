@@ -33,10 +33,9 @@ class Iydhoti{
 	}
 
 	void setOptions(string s){
-	  string output("-oaudio{s}.wav", s);
-      sound->SetOption("-oaudio.wav");
-      sound->CompileOrc(this->orc.c_str());
-      sound->ReadScore(this->sco.c_str());
+          sound->SetOption("-oaudio.wav");
+          sound->CompileOrc(this->orc.c_str());
+          sound->ReadScore(this->sco.c_str());
 	}
 
 	void play(){
@@ -48,10 +47,10 @@ class Iydhoti{
   public: 
 	Iydhoti(){
 	  sound = new Csound();
-	  this->orc = readFileIntoString("src/1.orc"); 
-//	  this->sco = readFileIntoString("src/bass.sco");
-	  this->scos.push_back(readFileIntoString("src/bass.sco"));
-	  this->scos.push_back(readFileIntoString("src/snare.sco"));
+	  this->orc = readFileIntoString("src/Iydhoti.orc"); 
+	  this->sco = readFileIntoString("src/Iydhoti_a.sco");
+//	  this->scos.push_back(readFileIntoString("src/bass.sco"));
+//	  this->scos.push_back(readFileIntoString("src/snare.sco"));
 	}
 
 	void run(){

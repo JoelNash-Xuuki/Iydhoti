@@ -1,9 +1,9 @@
-sr 		= 		44100
-kr 		= 		4410
+sr 	= 		44100
+kr 	= 		4410
 ksmps 	= 		10
 nchnls 	= 		2
 
-		instr   102
+	instr   102
 iamp	=	ampdb(p4)
 ipitch	=	cpspch(p5)
 icar	=	p6
@@ -13,10 +13,10 @@ ifn 	=   p9
 kpan	line 	p11, p3, p12
 kenv	oscil  iamp, 1/p3, p10
 a1   	foscil 	iamp*kenv, ipitch, icar, imod, indx, ifn
-		outs     a1 * kpan, a1 *(1-kpan)
-		endin
+	outs     a1 * kpan, a1 *(1-kpan)
+	endin
 
-instr	129
+	instr	129
 idur	=		p3
 iamp	=		p4
 ifrq	=		p5
@@ -33,7 +33,7 @@ afilt	tone	anoise, kcut
 		dispfft	afilt, idur, 4096
 		endin
 		
-		instr	130
+	instr	130
 idur	=		p3
 iamp	=		p4
 ifrq	=		p5
@@ -47,10 +47,10 @@ anoise	rand	ifrq
 afilt2	tone	anoise, kcut
 afilt1	tone	afilt2, kcut
        	out  	afilt1*kenv
-		dispfft	afilt1, idur, 4096
-		endin
+	dispfft	afilt1, idur, 4096
+	endin
 		
-		instr	131
+	instr	131
 idur	=		p3
 iamp	=		p4
 ifrq	=		p5
@@ -65,10 +65,10 @@ afilt3	tone	anoise, kcut
 afilt2	tone	afilt3, kcut
 afilt1	tone	afilt2, kcut
        	out  	afilt1*kenv
-		dispfft	afilt1, idur, 4096
-		endin
+	dispfft	afilt1, idur, 4096
+	endin
 		
-		instr	132
+	instr	132
 idur	=		p3
 iamp	=		p4
 ifrq	=		p5
@@ -84,5 +84,5 @@ afilt3	tone	afilt4, kcut
 afilt2	tone	afilt3, kcut
 afilt1	tone	afilt2, kcut
        	out  	afilt1*kenv
-		dispfft	afilt1, idur, 4096
-		endin
+	dispfft	afilt1, idur, 4096
+	endin

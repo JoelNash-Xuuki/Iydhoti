@@ -86,3 +86,8 @@ afilt1	tone	afilt2, kcut
        	out  	afilt1*kenv
 	dispfft	afilt1, idur, 4096
 	endin
+
+		instr 	106					
+a1 		loscil  10000, 440, 4  ; sample-based looping oscillator
+		out 	a1
+		endin

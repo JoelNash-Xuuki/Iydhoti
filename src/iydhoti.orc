@@ -24,12 +24,12 @@ iatk	=		p6
 irel	=		p7
 icut1	=		p8
 icut2	=		p9
-kpan	line 	p10, idur, p11
+ipan    =		p10
 kenv	linen	iamp, iatk, idur, irel
 kcut	expon	icut1, idur, icut2
 anoise	rand	ifrq	
 afilt	tone	anoise, kcut
-       	outs  	(afilt*kenv)*kpan, (afilt*kenv)*(1-kpan)  
+       	outs  	(afilt*kenv)*ipan, (afilt*kenv)*(1-ipan)  
 		dispfft	afilt, idur, 4096
 		endin
 		

@@ -33,7 +33,7 @@ class Iydhoti{
 	}
 
 	void setOptions(string s){
-          sound->SetOption("-oaudio.wav");
+          sound->SetOption("-odac");
           sound->CompileOrc(this->orc.c_str());
           sound->ReadScore(this->sco.c_str());
 	}
@@ -47,22 +47,20 @@ class Iydhoti{
   public: 
 	Iydhoti(){
 	  sound = new Csound();
-	  this->orc = readFileIntoString("src/Iydhoti.orc"); 
-	  this->sco = readFileIntoString("src/Iydhoti_a.sco");
-//	  this->scos.push_back(readFileIntoString("src/bass.sco"));
-//	  this->scos.push_back(readFileIntoString("src/snare.sco"));
+	  this->orc = readFileIntoString("src/iydhoti.orc"); 
+	  this->sco = readFileIntoString("src/iydhoti_a.sco");
 	}
 
 	void run(){
 	  //for(int i=0; i < scos.size(); i++){
-	   // this->setOptions(to_string(42));
-	    //this->play();
+	  this->setOptions(to_string(42));
+	  this->play();
 	  //}
     }
 };
 
 int main(){
-  Iydhoti t = Iydhoti(); 
+  Iydhoti t = Iydhoti();
   t.run();
   return 0;
 }

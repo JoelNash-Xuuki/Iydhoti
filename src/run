@@ -1,1 +1,1 @@
-csound -odac iydhoti.orc iydhoti_b.sco
+csound -odac iydhoti.orc iydhoti_a.sco

@@ -4,16 +4,16 @@ ksmps 	= 		10
 nchnls 	= 		2
 
 	instr   102
-iamp	=	ampdb(p4)
-ipitch	=	cpspch(p5)
-icar	=	p6
-imod	= 	p7
-indx	=	p8
-ifn 	=   p9
-kpan	line 	p11, p3, p12
+iamp	= ampdb(p4)
+ipitch	= cpspch(p5)
+icar	= p6
+imod	= p7
+indx	= p8
+ifn 	= p9
+ipan    = p11
 kenv	oscil  iamp, 1/p3, p10
 a1   	foscil 	iamp*kenv, ipitch, icar, imod, indx, ifn
-	outs     a1 * kpan, a1 *(1-kpan)
+	outs     a1 * ipan, a1 *(1-ipan)
 	endin
 
 	instr	129

@@ -377,6 +377,7 @@ $SPAT_OUT
 ilnth	=  p3		; note length
 ifn	=  p4		; table number
 ivel	=  p5		; velocity
+ibsfrq	= p6		; base frequency (MIDI note)
 
 iscl	table  0, ifn	; amp. scale
 idel	table  1, ifn	; delay
@@ -384,7 +385,6 @@ irel	table  2, ifn	; release time
 iX	table  3, ifn	; X
 iY	table  4, ifn	; Y
 iZ	table  5, ifn	; Z
-ibsfrq	table  6, ifn	; base frequency (MIDI note)
 ifrqs	table  7, ifn	; start frequency / base frq
 ifrqt	table  8, ifn	; frequency envelope half-time
 iphs	table  9, ifn	; start phase (0..1)

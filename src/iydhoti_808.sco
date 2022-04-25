@@ -36,44 +36,6 @@ f 41 0 32 -2	20000			/* amplitude scale	     */
 		0.025	0.5		/* decay time 1, level 1     */
 		0.025			/* decay 2 half-time	     */
 
-/* ---- TR-909 snare drum 1 ---- */
-
-f 50 0 32 -2	20000			/* amplitude scale	     */
-		0.02			/* delay		     */
-		0.04			/* release time		     */
-		-0.5	1.25	0	/* X, Y, Z coordinates	     */
-		49			/* base freq. (MIDI note)    */
-		3			/* start freq. / base frq.   */
-		0.005			/* frequency env. half-time  */
-		0.5	0.005	0.2	/* FM depth start, envelope  */
-					/*   half-time, end	     */
-		1.4983			/* osc 2 frq. / osc 1 frq.   */
-		1.0	0.01	0	/* osc 2 amp. start, env.    */
-					/*   half-time, end	     */
-		2500	10000		/* noise BP freq., bandwidth */
-		0	0.01	0.7	/* noise amp. start, env.    */
-					/*   half-time, end	     */
-		0.04			/* decay envelope half-time  */
-
-/* ---- TR-909 snare drum 2 ---- */
-
-f 51 0 32 -2	20000			/* amplitude scale	     */
-		0.02			/* delay		     */
-		0.04			/* release time		     */
-		1	0.25	0	/* X, Y, Z coordinates	     */
-		52			/* base freq. (MIDI note)    */
-		2			/* start freq. / base frq.   */
-		0.005			/* frequency env. half-time  */
-		1.0	0.002	0	/* FM depth start, envelope  */
-					/*   half-time, end	     */
-		1.4983			/* osc 2 frq. / osc 1 frq.   */
-		1	0.02	0	/* osc 2 amp. start, env.    */
-					/*   half-time, end	     */
-		5000	7500		/* noise BP freq., bandwidth */
-		0	0.008	0.35	/* noise amp. start, env.    */
-					/*   half-time, end	     */
-		0.03			/* decay envelope half-time  */
-
 /* ---- TR-909 snare drum 3 ---- */
 
 f 52 0 32 -2	17000			/* amplitude scale	     */
@@ -92,25 +54,6 @@ f 52 0 32 -2	17000			/* amplitude scale	     */
 		0	0.005	1	/* noise amp. start, env.    */
 					/*   half-time, end	     */
 		0.02			/* decay envelope half-time  */
-
-/* ---- TR-909 snare drum 4 ---- */
-
-f 53 0 32 -2	15000			/* amplitude scale	     */
-		0.02			/* delay		     */
-		0.04			/* release time		     */
-		-0.75	0.75	0	/* X, Y, Z coordinates	     */
-		56			/* base freq. (MIDI note)    */
-		2			/* start freq. / base frq.   */
-		0.0015			/* frequency env. half-time  */
-		2.0	0.001	0	/* FM depth start, envelope  */
-					/*   half-time, end	     */
-		1.4983			/* osc 2 frq. / osc 1 frq.   */
-		1	0.02	0	/* osc 2 amp. start, env.    */
-					/*   half-time, end	     */
-		5000	7500		/* noise BP freq., bandwidth */
-		0	0.005	1	/* noise amp. start, env.    */
-					/*   half-time, end	     */
-		0.03			/* decay envelope half-time  */
 
 /* ---- rim shot ---- */
 

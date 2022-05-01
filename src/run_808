@@ -1,1 +1,1 @@
-csound -odac -s iydhoti_808.orc iydhoti_808.sco
+csound -iadc -odac iydhoti_808.orc iydhoti_808.sco

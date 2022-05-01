@@ -1,6 +1,14 @@
 sr	=  48000
 kr	=  1000
 nchnls	=  2
+;nchnls_i = 1
+
+;	instr 3
+;ain1 in
+;adel linseg 0, p3*.5, 0.02, p3*.5, 0
+;aout flanger ain1, adel, .7
+;out ain1
+;	endin
 
 	instr   102
 iamp	= ampdb(p4)
